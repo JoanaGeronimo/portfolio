@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBOT Interface</title>
+    <link rel="stylesheet" href="stylesChat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar para lista de chats -->
+        <div class="sidebar">
+            <h2>Chats</h2>
+            <div class="chat-list" id="chat-list">
+                <div class="chat-item" data-chat-id="1">
+                    <div class="chat-date">Hoje</div>
+                    <div class="chat-name">Chat de Exemplo</div>
+                    <div class="chat-options">
+                        <span class="options-icon">•••</span>
+                        <div class="options-menu">
+                            <button class="option-btn" onclick="renameChat(this)">
+                                <i class="fas fa-edit"></i> Renomear
+                            </button>
+                            <button class="option-btn" onclick="deleteChat(this)">
+                                <i class="fas fa-trash"></i> Excluir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="new-chat-btn">Novo Chat</button>
+        </div>
+
+        <!-- Área principal de chat -->
+        <div class="chat-area">
+            <div class="chat-history" id="chat-history">
+                <div class="message bot">Olá! Como posso ajudar você hoje?</div>
+            </div>
+
+            <!-- Campo de entrada de mensagem e botão de envio -->
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+                <button id="send-btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Adicione um console.log para verificar se o script está carregado -->
+    <script>
+        console.log("script.js carregado");
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
