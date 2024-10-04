@@ -18,8 +18,6 @@ Execute o programa no terminal:
 
 ### Estrutura do Código
 
-Funções para Lista:
-
 inserirNoFinal - Insere um novo elemento no final da lista.
 removerCelula - Remove um elemento específico da lista.
 buscarLista - Busca um elemento na lista.
